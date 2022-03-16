@@ -20,8 +20,9 @@
  '(initial-frame-alist '((fullscreen . maximized)))
  '(irony-completion-trigger-commands
    '(self-insert-command newline-and-indent c-context-line-break c-scope-operator c-electric-backspace c-electric-brace c-electric-colon c-electric-lt-gt c-electric-paren c-electric-pound c-electric-semi&comma c-electric-slash c-electric-star))
+ '(menu-bar-mode nil)
  '(org-agenda-files
-   '("~/w/ipm-docs/all-tasks.org" "~/w/ipm-docs/hp.org" "~/w/ipm-docs/distortion.org" "~/w/ipm-docs/daily-report.org"))
+   '("~/w/ipm-docs/gtd/parklight.org" "~/w/ipm-docs/gtd/gnuastro.org" "~/w/ipm-docs/gtd/inola.org" "~/w/ipm-docs/gtd/projects.org" "~/w/ipm-docs/gtd/meetings.org" "~/w/ipm-docs/gtd/daily-report.org"))
  '(org-export-backends '(beamer html icalendar latex md odt))
  '(package-selected-packages '(flycheck multiple-cursors))
  '(save-place-mode t)
@@ -65,7 +66,7 @@
 ;; (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 ;; The above is the default in recent emacsen
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "NEXT(n)" "PROG(p)" "INTR(i)" "DONE(d)")))
+      '((sequence "TODO(t)" "NEXT(n)" "PROG(p)" "WAIT(w)" "DONE(d)")))
 
 ;; Create tags using C-c C-c in headlines (org-mode)
 (setq org-tag-alist
@@ -135,5 +136,15 @@
         (concat
          (getenv "HOME")"/.local/bin" ":"
          (getenv "PATH")
+        )
+        )
+
+;; Update the INFOPATH
+;; Update the PATH so we can use it within 'compile'
+(setenv "INFOPATH"
+        (concat
+         "/usr/share/info" ":"
+         "/usr/local/share/info" ":"
+         (getenv "HOME")"/.local/share/info"
         )
 )

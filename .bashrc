@@ -11,6 +11,7 @@ alias ls='ls --color=auto'
 alias scrcpy='scrcpy -b 3M'
 alias grep="grep --color=always"
 alias pacman='pacman --color=auto'
+alias dsw="ds9 -tile mode column -match frame wcs -lock frame wcs"
 
 # Inspired from Mohammad's gitlab
 #
@@ -32,4 +33,4 @@ fi
 
 source /usr/share/nvm/init-nvm.sh
 export PATH=$PATH:$HOME/.local/bin
-export INFOPATH=$INFOPATH:/usr/share/info:$HOME/.local/lib
+export INFOPATH=/usr/share/info:$HOME/.local/share/info:/usr/local/share/info
