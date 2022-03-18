@@ -22,7 +22,7 @@
    '(self-insert-command newline-and-indent c-context-line-break c-scope-operator c-electric-backspace c-electric-brace c-electric-colon c-electric-lt-gt c-electric-paren c-electric-pound c-electric-semi&comma c-electric-slash c-electric-star))
  '(menu-bar-mode nil)
  '(org-agenda-files
-   '("~/w/ipm-docs/gtd/parklight.org" "~/w/ipm-docs/gtd/gnuastro.org" "~/w/ipm-docs/gtd/inola.org" "~/w/ipm-docs/gtd/projects.org" "~/w/ipm-docs/gtd/meetings.org" "~/w/ipm-docs/gtd/daily-report.org"))
+   '("~/w/ipm-docs/parklight.org" "~/w/ipm-docs/gnuastro.org" "~/w/ipm-docs/inola.org" "~/w/ipm-docs/projects.org" "~/w/ipm-docs/meetings.org" "~/w/ipm-docs/daily-report.org"))
  '(org-export-backends '(beamer html icalendar latex md odt))
  '(package-selected-packages '(flycheck multiple-cursors))
  '(save-place-mode t)
