@@ -1,2 +1,1 @@
-cp $HOME/.bashrc .
-cp $HOME/.emacs  .
+cp $HOME/.bashrc $HOME/.bash_profile $HOME/.emacs .

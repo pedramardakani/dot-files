@@ -6,12 +6,14 @@
 [[ $- != *i* ]] && return
 
 # Pedram, Custom scripts
-alias l="ls -ltrha"
-alias ls='ls --color=auto'
-alias scrcpy='scrcpy -b 3M'
+alias ls="ls --color=auto"
+alias l="ls -htr --color=auto"
+alias ll="ls -hltra --color=auto"
+alias scrcpy="scrcpy -b 3M"
 alias grep="grep --color=always"
-alias pacman='pacman --color=auto'
-alias dsw="ds9 -tile mode column -match frame wcs -lock frame wcs"
+alias pacman="pacman --color=auto"
+alias dsw="ds9 -grid yes -zoom to 0.05 -tile column -lock frame wcs -lock colorbar yes"
+alias inola="/Local/Documents/myProjects/ipm-inola/git/admin-scripts/connect-ino-tunnel"
 
 # Inspired from Mohammad's gitlab
 #
@@ -32,5 +34,6 @@ else
 fi
 
 source /usr/share/nvm/init-nvm.sh
-export PATH=$PATH:$HOME/.local/bin
-export INFOPATH=/usr/share/info:$HOME/.local/share/info:/usr/local/share/info
+
+# Use no-window emacs when 'C-x e' is pressed
+export EDITOR="emacs -nw"

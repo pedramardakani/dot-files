@@ -22,7 +22,7 @@
    '(self-insert-command newline-and-indent c-context-line-break c-scope-operator c-electric-backspace c-electric-brace c-electric-colon c-electric-lt-gt c-electric-paren c-electric-pound c-electric-semi&comma c-electric-slash c-electric-star))
  '(menu-bar-mode nil)
  '(org-agenda-files
-   '("~/w/ipm-docs/parklight.org" "~/w/ipm-docs/gnuastro.org" "~/w/ipm-docs/inola.org" "~/w/ipm-docs/projects.org" "~/w/ipm-docs/meetings.org" "~/w/ipm-docs/daily-report.org"))
+   '("~/w/iac/notes.org" "/home/pedram/w/ipm-docs/student-loan.org" "/home/pedram/w/ipm-docs/warp-paper.org" "/home/pedram/w/ipm-docs/refs.org" "/home/pedram/w/ipm-docs/parklight.org" "/home/pedram/w/ipm-docs/meetings.org" "/home/pedram/w/ipm-docs/maneage.org" "/home/pedram/w/ipm-docs/jc.org" "/home/pedram/w/ipm-docs/inola.org" "/home/pedram/w/ipm-docs/indi.org" "/home/pedram/w/ipm-docs/hp.org" "/home/pedram/w/ipm-docs/gnuastro.org" "/home/pedram/w/ipm-docs/distortion.org" "/home/pedram/w/ipm-docs/daily-report.org" "/home/pedram/w/ipm-docs/courses.org" "/home/pedram/w/ipm-docs/projects.org"))
  '(org-export-backends '(beamer html icalendar latex md odt))
  '(package-selected-packages '(flycheck multiple-cursors))
  '(save-place-mode t)
@@ -139,12 +139,5 @@
         )
         )
 
-;; Update the INFOPATH
-;; Update the PATH so we can use it within 'compile'
-(setenv "INFOPATH"
-        (concat
-         "/usr/share/info" ":"
-         "/usr/local/share/info" ":"
-         (getenv "HOME")"/.local/share/info"
-        )
-)
+;; Use manual structure templates
+;; (require 'org-tempo)
