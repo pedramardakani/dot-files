@@ -139,5 +139,11 @@
         )
         )
 
+;; Update the INFOPATH so we can use it within 'info mode'
+(push (concat
+       (getenv "HOME")"/.local/share/info"
+       )
+      Info-directory-list)
+
 ;; Use manual structure templates
 ;; (require 'org-tempo)

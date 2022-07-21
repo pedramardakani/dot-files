@@ -8,18 +8,14 @@
 EDITOR="emacs -nw"
 
 # Initial environment variables
-PATH="${PATH}:${HOME}/.local/bin"
-MANPATH="${MANPATH}:/usr/local/share/man"
-INFOPATH="${INFOPATH}:/usr/local/share/info:/usr/share/info"
+PATH="${HOME}/.local/bin:${PATH}"
+MANPATH="/usr/local/share/man:${MANPATH}"
+INFOPATH="/usr/local/share/info:/usr/share/info:${INFOPATH}"
 
 # TeXLive environment variables
-PATH="${PATH}:${HOME}/.local/texlive/2022/bin/x86_64-linux"
-MANPATH="${MANPATH}:${HOME}/.local/texlive/2022/texmf-dist/doc/man"
-INFOPATH="${INFOPATH}:${HOME}/.local/texlive/2022/texmf-dist/doc/info"
-
-# Gnuastro environment variables
-INFOPATH="${INFOPATH}:${HOME}/.local/share/info"
-
+PATH="${HOME}/.local/texlive/2022/bin/x86_64-linux:${PATH}"
+MANPATH="${HOME}/.local/texlive/2022/texmf-dist/doc/man:${MANPATH}"
+INFOPATH="${HOME}/.local/texlive/2022/texmf-dist/doc/info:${INFOPATH}"
 
 # Sort path variables and make sure there are no duplicates and also there
 # is no trailing ':' at the end (which would add the current directory to

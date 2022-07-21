@@ -42,3 +42,6 @@ fi
 if [ -f /usr/share/nvm/init-nvm.sh ]; then
     source /usr/share/nvm/init-nvm.sh
 fi
+
+# Gnuastro environment variables
+INFOPATH="${HOME}/.local/share/info:${INFOPATH}"
